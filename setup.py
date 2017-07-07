@@ -4,38 +4,25 @@ from setuptools import setup
 
 
 requires = [
-    'pycrypto>=2.6.1',
-    'requests>=2.13.0',
-    'beautifulsoup4>=4.5.3',
-    'marshmallow>=2.13.5',
-    'april>=0.0.1a4',
-    'aiozmq',
-    'msgpack-python',
-    'mutagen>=1.37',
-    'python-Levenshtein>=0.12.0',
-    'fuzzywuzzy',
-
 ]
 
 
 setup(
-    name='fuocore',
-    version='0.0.5a4',
-    description='feeluown core',
+    name='toy',
+    version='0.0.1a',
+    description='toy',
     author='Cosven',
     author_email='cosven.yin@gmail.com',
-    py_modules=['mpv'],
     packages=[
-        'fuocore',
-        'fuocore.third_party',
-        'fuocore.third_party.netease'
+        'toy',
         ],
     package_data={
         '': []
         },
-    url='https://github.com/cosven/feeluown-core',
-    keywords=['media', 'player', 'api'],
+    url='https://github.com/cosven/toy',
+    keywords=['toy'],
     classifiers=(
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
