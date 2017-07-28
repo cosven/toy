@@ -1,6 +1,8 @@
 #! /usr/bin/env python3
 # coding: utf-8
 
+from __future__ import print_function
+
 
 def with_color(text, fg='0', bg='0'):
     return '\033[{fg}m{text}\033[{bg}m'.format(fg=fg, bg=bg, text=text)
@@ -43,7 +45,7 @@ if __name__ == '__main__':
     import time
 
     with ProgressBar() as pb:
-        time.sleep(2)
-        for i in range(0, 100, 5):
+        time.sleep(0.5)
+        for i in range(0, 100, 2):
             time.sleep(0.1)
             pb.ratio = float(i)/100
